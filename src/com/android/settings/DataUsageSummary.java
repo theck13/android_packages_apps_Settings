@@ -1242,8 +1242,10 @@ public class DataUsageSummary extends Fragment {
             mAppPieChart.setOriginAngle(175);
 
             mAppPieChart.removeAllSlices();
-            mAppPieChart.addSlice(foregroundBytes, Color.parseColor("#d88d3a"));
-            mAppPieChart.addSlice(defaultBytes, Color.parseColor("#666666"));
+            mAppPieChart.addSlice(foregroundBytes,
+                    Color.parseColor(getString(R.color.data_usage_series_details_pie_foreground_color));
+            mAppPieChart.addSlice(defaultBytes,
+                    Color.parseColor(getString(R.color.data_usage_series_details_pie_background_color));
 
             mAppPieChart.generatePath();
 
